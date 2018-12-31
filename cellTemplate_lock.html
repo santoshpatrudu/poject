@@ -1,0 +1,8 @@
+<!--
+  Button shows current state (locked/unlocked); clicking it toggles the state.  
+  
+  Initial button state is set by retreived read-only grid data; lock state is not persisted.
+-->
+<button ng-click="row.entity.isActive = !row.entity.isActive" ng-model="row.entity.isActive" style="{{row.entity.isActive ? 'background-color: lightgreen' : ''}}">
+  {{ row.entity.isActive ? 'Unlocked' : 'Locked' }}
+</button>
